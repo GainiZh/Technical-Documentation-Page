@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>JavaScript Documentation</header>
+        <ul class="main-nav">
+            <a class="nav-link" href="#JavaScript_First_Steps" rel="internal"><li>JavaScript First Steps</li></a>
+            <a class="nav-link" href="#Basics" rel="internal"><li>Basics</li></a>
+            <a class="nav-link" href="#Conditional_Statements" rel="internal"><li>Conditional Statements</li></a>
+            <a class="nav-link" href="#for_statement" rel="internal"><li>for statement</li></a>
+            <a class="nav-link" href="#do_while_statement" rel="internal"><li>do while statement</li></a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="JavaScript_First_Steps">
+            <header>JavaScript First Steps</header>
+                <article>
+                    <p>In our first JavaScript module, we first answer some fundamental questions such as "what is JavaScript?", "what does it
+                    look like?", and "what can it do?", before moving on to taking you through your first practical experience of writing
+                    JavaScript. After that, we discuss some key building blocks in detail, such as variables, strings, numbers and arrays.</p>
+                    <p>Before starting this module, you don't need any previous JavaScript knowledge, but you should have some familiarity
+                    with HTML and CSS.</p>
+                </article>          
+        </section>
+        <section class="main-section" id="Basics">
+            <header>Basics</header>
+                <article>
+                    <p>JavaScript borrows most of its syntax from Java, but is also influenced by Awk, Perl and Python.</p>
+                    <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in
+                    German) could be used as a variable name.</p>
+                    <code>var Früh = "foobar";</code>
+                    <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.
+                    
+                    In JavaScript, instructions are called statements and are separated by semicolons (;).</p>
+
+                    <p>The let statement declares a block scope local variable, optionally initializing it to a value. let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is
+                    used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of
+                    block scope.</p>
+                    <code>let x = 1;</code>
+                </article>           
+        </section>
+        <section class="main-section" id="Conditional_Statements">
+            <header>Conditional Statements</header>           
+                <article>
+                    <p>A conditional statement is a set of commands that executes if a specified condition is true. JavaScript supports two
+                    conditional statements: if...else and switch.</p>
+                    <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a
+                    statement if the condition is false. An if statement looks as follows:</p>
+                    <code>if (condition) {
+                    statement_1;
+                    } else {
+                    statement_2;
+                    }</code>
+                    <p>Here the condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
+                    evaluates to true and false. If condition evaluates to true, <code>statement_1</code> is executed; otherwise, <code>statement_2</code> is
+                    executed.</p>
+                </article>          
+        </section>
+        <section class="main-section" id="for_statement">
+            <header>for statement</header>
+                <article>
+                    <p>A <code>for</code> loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C
+                    <code>for</code> loop. A <code>for</code> statement looks as follows:</p>
+                    <code>for ([initialExpression]; [condition]; [incrementExpression])
+                    statement</code>
+                    <p>When a <code>for</code> loop executes, the following occurs:</p>
+                        <ol>
+                            <li>The initializing expression initialExpression, if any, is executed. This expression usually initializes one or more
+                            loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare
+                            variables.</li>
+                            <li>The condition expression is evaluated. If the value of condition is true, the loop statements execute. If the value of
+                            condition is false, the for loop terminates. If the condition expression is omitted entirely, the condition is assumed
+                            to be true.</li>
+                            <li> statement executes. To execute multiple statements, use a block statement ({ ... }) to group those statements.
+                            If present, the update expression incrementExpression is executed.</li>
+                            <li> returns to step 2.</li>
+                            <li>Lorem ipsum.</li>
+                        </ol>
+                </article>            
+        </section>
+        <section class="main-section" id="do_while_statement">
+            <header>do while statement</header>
+                <article>
+                    <p>The do...while statement repeats until a specified condition evaluates to false. A do...while statement looks as
+                    follows:</p>
+                    <code>do
+                    statement
+                    while (condition);</code>
+                    <p>statement is always executed once before the condition is checked (and then again until the while condition returns
+                    false). To execute multiple statements, use a block statement ({ ... }) to group those statements. If condition is
+                    true, the statement executes again. At the end of every execution, the condition is checked. When the condition is
+                    false, execution stops and control passes to the statement following do...while.</p>
+                </article>
+        </section>
+
+    </main>
+</body>
+</html>
